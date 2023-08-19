@@ -74,7 +74,7 @@ jobs:
       - name: Build Docker image
         run: docker build . --tag gozer/aws-quota-checker:latest
       - name: Push Docker image for branch
-        if: ${{ github.ref == 'refs/heads/maintainer' && github.event_name == 'push' }}
+        if: ${{ github.ref == 'refs/heads/master' && github.event_name == 'push' }}
         run: |
           docker tag gozer/aws-quota-checker:latest gozer/aws-quota-checker:maintainer
           docker push gozer/aws-quota-checker:maintainer
