@@ -4,11 +4,11 @@ on:
       - maintainer
       - master
   push:
+    tags:
+      - "*"
     branches:
       - maintainer
       - master
-    tags:
-      - "*"
 
 jobs:
   test:
