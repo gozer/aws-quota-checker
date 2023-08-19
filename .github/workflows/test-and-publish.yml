@@ -2,11 +2,11 @@ on:
   pull_request:
     branches:
       - maintainer
-      - maintainer
+      - master
   push:
     branches:
       - maintainer
-      - maintainer
+      - master
     tags:
       - "*"
 
