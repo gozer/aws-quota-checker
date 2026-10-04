@@ -1,4 +1,4 @@
-FROM python:3.11-alpine@sha256:603975e62d85aa07578034d3d10ffa1983b7618a6abb6371cf51941be6b8842c
+FROM python:3.14-alpine@sha256:f6a589d43c42b9e7f7dc67a12d37132491f362859a5d750607710cc56da3bc72
 LABEL org.opencontainers.image.source https://github.com/brennerm/aws-quota-checker
 WORKDIR /app
 ADD setup.py /app

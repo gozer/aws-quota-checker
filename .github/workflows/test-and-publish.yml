@@ -16,7 +16,7 @@ jobs:
       - name: setup Python
         uses: actions/setup-python@61a6322f88396a6271a6ee3565807d608ecaddd1 # v4
         with:
-          python-version: "3.8"
+          python-version: "3.14"
       - name: install
         run: pip install .
       - name: run all checks
@@ -35,7 +35,7 @@ jobs:
       - name: setup Python
         uses: actions/setup-python@61a6322f88396a6271a6ee3565807d608ecaddd1 # v4
         with:
-          python-version: "3.8"
+          python-version: "3.14"
       - name: install
         run: pip install .[dev]
       - name: get changelog entry
